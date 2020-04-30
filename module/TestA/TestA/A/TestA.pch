@@ -1,0 +1,24 @@
+//
+//  TestA.pch
+//  TestA
+//
+//  Created by 董雪娇 on 2020/3/8.
+//  Copyright © 2020 董雪娇. All rights reserved.
+//
+
+#ifndef TestA_pch
+#define TestA_pch
+
+#import <TestBasis-umbrella.h>
+#import <TestBasis-Swift.h>
+
+#import <CTMediator/CTMediator.h>
+
+
+//#import "TestA-Swift.h"
+
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* TestA_pch */

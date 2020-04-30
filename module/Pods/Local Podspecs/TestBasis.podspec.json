@@ -1,0 +1,137 @@
+{
+  "name": "TestBasis",
+  "version": "1.0.0",
+  "summary": "TestBasis SDK.",
+  "description": "TestBasis SDK for iOS.",
+  "homepage": "http://www.yunduoketang.com",
+  "license": "MIT",
+  "authors": {
+    "dxj": "qq@163.com"
+  },
+  "platforms": {
+    "ios": "11.0"
+  },
+  "source": {
+    "git": "https://github.com/dongMan/dxjRouter.git",
+    "tag": "1.0.0"
+  },
+  "requires_arc": true,
+  "static_framework": true,
+  "swift_versions": "5.0",
+  "prefix_header_contents": "",
+  "pod_target_xcconfig": {
+    "GCC_PREPROCESSOR_DEFINITIONS": "$(inherited) TestBasis_NAME=TestBasis TestBasis_VERSION=1.0.0"
+  },
+  "dependencies": {
+    "MGJRouter": [
+
+    ]
+  },
+  "subspecs": [
+    {
+      "name": "TestBasis",
+      "subspecs": [
+        {
+          "name": "Base",
+          "source_files": [
+            "Foundation/**/*.{h,m}",
+            "UIKit/**/*.{h,m}"
+          ],
+          "public_header_files": [
+            "Foundation/**/*.h",
+            "UIKit/**/*.h"
+          ],
+          "frameworks": [
+            "Foundation",
+            "UIKit"
+          ],
+          "libraries": [
+            "icucore",
+            "c++"
+          ]
+        },
+        {
+          "name": "BaseSDK",
+          "public_header_files": "TestBasis/BaseSDK/**/*.h",
+          "source_files": [
+            "TestBasis/BaseSDK/*.{h,m,swift}",
+            "TestBasis/BaseSDK/**/*.{h,m,swift}"
+          ],
+          "frameworks": [
+            "OpenAL",
+            "GLKit"
+          ],
+          "libraries": [
+            "iconv",
+            "z",
+            "sqlite3"
+          ],
+          "dependencies": {
+            "FFToast": [
+              "1.2.0"
+            ],
+            "MBProgressHUD": [
+
+            ],
+            "LKDBHelper": [
+              "2.5.1"
+            ]
+          }
+        },
+        {
+          "name": "Config",
+          "source_files": "TestBasis/Config/*.swift"
+        },
+        {
+          "name": "Protocol",
+          "source_files": "TestBasis/Protocol/*.swift"
+        },
+        {
+          "name": "CTMediatorFile",
+          "public_header_files": "TestBasis/CTMediatorFile/*.h",
+          "source_files": "TestBasis/CTMediatorFile/*.{h,m,swift}",
+          "dependencies": {
+            "CTMediator": [
+
+            ]
+          }
+        },
+        {
+          "name": "Color",
+          "source_files": "TestBasis/Color/*.swift"
+        },
+        {
+          "name": "Network",
+          "public_header_files": "TestBasis/Network/**/*.h",
+          "source_files": "TestBasis/Network/**/*.{h,m,swift}",
+          "dependencies": {
+            "AFNetworking": [
+
+            ],
+            "HandyJSON": [
+              "~> 5.0.0"
+            ],
+            "Alamofire": [
+              "~> 4.8.2"
+            ],
+            "Socket.IO-Client-Swift": [
+              "13.2.1"
+            ],
+            "Reachability": [
+
+            ],
+            "TestBasis/TestBasis/BaseSDK": [
+
+            ]
+          }
+        },
+        {
+          "name": "SSL",
+          "public_header_files": "TestBasis/SSL/*.h",
+          "source_files": "TestBasis/SSL/*.{h,m}"
+        }
+      ]
+    }
+  ],
+  "swift_version": "5.0"
+}

@@ -1,0 +1,113 @@
+PODS:
+  - AFNetworking (4.0.1):
+    - AFNetworking/NSURLSession (= 4.0.1)
+    - AFNetworking/Reachability (= 4.0.1)
+    - AFNetworking/Security (= 4.0.1)
+    - AFNetworking/Serialization (= 4.0.1)
+    - AFNetworking/UIKit (= 4.0.1)
+  - AFNetworking/NSURLSession (4.0.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (4.0.1)
+  - AFNetworking/Security (4.0.1)
+  - AFNetworking/Serialization (4.0.1)
+  - AFNetworking/UIKit (4.0.1):
+    - AFNetworking/NSURLSession
+  - Alamofire (4.8.2)
+  - CTMediator (31)
+  - FFToast (1.2.0)
+  - FMDB (2.7.5):
+    - FMDB/standard (= 2.7.5)
+  - FMDB/standard (2.7.5)
+  - HandyJSON (5.0.1)
+  - LKDBHelper (2.5.1):
+    - LKDBHelper/standard (= 2.5.1)
+  - LKDBHelper/standard (2.5.1):
+    - FMDB
+  - MBProgressHUD (1.2.0)
+  - MGJRouter (0.10.0)
+  - Reachability (3.2)
+  - Socket.IO-Client-Swift (13.2.1):
+    - Starscream (~> 3.0.2)
+  - Starscream (3.0.6)
+  - TestBasis (1.0.0):
+    - MGJRouter
+    - TestBasis/TestBasis (= 1.0.0)
+  - TestBasis/TestBasis (1.0.0):
+    - MGJRouter
+    - TestBasis/TestBasis/Base (= 1.0.0)
+    - TestBasis/TestBasis/BaseSDK (= 1.0.0)
+    - TestBasis/TestBasis/Color (= 1.0.0)
+    - TestBasis/TestBasis/Config (= 1.0.0)
+    - TestBasis/TestBasis/CTMediatorFile (= 1.0.0)
+    - TestBasis/TestBasis/Network (= 1.0.0)
+    - TestBasis/TestBasis/Protocol (= 1.0.0)
+    - TestBasis/TestBasis/SSL (= 1.0.0)
+  - TestBasis/TestBasis/Base (1.0.0):
+    - MGJRouter
+  - TestBasis/TestBasis/BaseSDK (1.0.0):
+    - FFToast (= 1.2.0)
+    - LKDBHelper (= 2.5.1)
+    - MBProgressHUD
+    - MGJRouter
+  - TestBasis/TestBasis/Color (1.0.0):
+    - MGJRouter
+  - TestBasis/TestBasis/Config (1.0.0):
+    - MGJRouter
+  - TestBasis/TestBasis/CTMediatorFile (1.0.0):
+    - CTMediator
+    - MGJRouter
+  - TestBasis/TestBasis/Network (1.0.0):
+    - AFNetworking
+    - Alamofire (~> 4.8.2)
+    - HandyJSON (~> 5.0.0)
+    - MGJRouter
+    - Reachability
+    - Socket.IO-Client-Swift (= 13.2.1)
+    - TestBasis/TestBasis/BaseSDK
+  - TestBasis/TestBasis/Protocol (1.0.0):
+    - MGJRouter
+  - TestBasis/TestBasis/SSL (1.0.0):
+    - MGJRouter
+
+DEPENDENCIES:
+  - TestBasis (from `TestBasis.podspec`)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - AFNetworking
+    - Alamofire
+    - CTMediator
+    - FFToast
+    - FMDB
+    - HandyJSON
+    - LKDBHelper
+    - MBProgressHUD
+    - MGJRouter
+    - Reachability
+    - Socket.IO-Client-Swift
+    - Starscream
+
+EXTERNAL SOURCES:
+  TestBasis:
+    :path: TestBasis.podspec
+
+SPEC CHECKSUMS:
+  AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
+  Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
+  CTMediator: 24a1279bd0909608c7d6a704e660149cc64e5f87
+  FFToast: 60e0f3c9fd8fc473205015055ee39cd200404e01
+  FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
+  HandyJSON: d45b8415c501e3affc59ca9762c1197ff0feb646
+  LKDBHelper: 9a276ba51f2e16263d46a9517e16cc9b03472664
+  MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
+  MGJRouter: 15d94541eb2cc81eff7d577337288feb7ae9575f
+  Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
+  Socket.IO-Client-Swift: b94943e2fb916fe2f95244b9ed21828634002280
+  Starscream: ef3ece99d765eeccb67de105bfa143f929026cf5
+  TestBasis: 868841c91293e263ef6a5f5b03ac02bfbcb920e9
+
+PODFILE CHECKSUM: afc25cc21ff17a445db385c348f45d6c53aa0da5
+
+COCOAPODS: 1.9.1

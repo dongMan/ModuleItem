@@ -1,0 +1,34 @@
+workspace 'DXJModule.xcworkspace' #项目包含了一个名为DXJModule的workspace
+
+platform :ios, '11.0'
+inhibit_all_warnings!
+use_frameworks!
+
+install! 'cocoapods', :deterministic_uuids => false
+
+
+source 'https://github.com/dongMan/dxjRouter.git'
+source 'https://github.com/CocoaPods/Specs.git'
+
+
+target 'TestA' do
+  project 'TestA/TestA.xcodeproj'
+
+  pod 'TestBasis', :path => "TestBasis.podspec"
+
+end
+
+target 'TestB' do
+  project 'TestB/TestB.xcodeproj'
+  
+  pod 'TestBasis', :path => "TestBasis.podspec"
+
+end
+
+target 'TestC' do
+  project 'TestC/TestC.xcodeproj'
+  
+  pod 'TestBasis', :path => "TestBasis.podspec"
+
+end
+

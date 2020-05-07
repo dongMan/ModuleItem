@@ -1,6 +1,0 @@
-framework module TestBasis {
-  umbrella header "TestBasis-umbrella.h"
-
-  export *
-  module * { export * }
-}

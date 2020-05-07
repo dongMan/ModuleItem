@@ -37,7 +37,6 @@
         }
     }
     
-    
     if ([navigationController isKindOfClass:[UINavigationController class]]) {
         [navigationController pushViewController:viewController animated:animated];
     }
@@ -49,6 +48,12 @@
     if ([viewController isKindOfClass:[UINavigationController class]]) {
         UINavigationController *navigationController = (UINavigationController *)viewController;
         viewController = navigationController.topViewController;
+    }
+    
+    if ([viewController isKindOfClass:[UIAlertController class]]) {
+        UIViewController *viewControllerToUse = viewController.presentingViewController;
+        [viewController dismissViewControllerAnimated:false completion:nil];
+        viewController = viewControllerToUse;
     }
     
     if (viewController) {

@@ -18,7 +18,6 @@ class Test1ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .blue
-        
         self.navigationItem.title = NSStringFromClass(self.classForCoder);
 
         let btn = UIButton(type: UIButton.ButtonType.custom)

@@ -10,7 +10,6 @@
 #endif
 #endif
 
-#import "NSBundle+ImageBundleName.h"
 #import "NSObject+YXModel.h"
 #import "UIButton+HitRect.h"
 #import "UIImage+imageWithName.h"

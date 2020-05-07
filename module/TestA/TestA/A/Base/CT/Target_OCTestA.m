@@ -9,7 +9,12 @@
 #import "Target_OCTestA.h"
 #import "TestOC1ViewController.h"
 #import "TestOC2ViewController.h"
+
+#if PODTESTA==1
+#import <TestA/TestA-Swift.h>
+#else
 //#import "TestA-Swift.h"
+#endif
 
 @implementation Target_OCTestA
 - (UIViewController *)Action_OCTest2ViewController:(NSDictionary *)params {

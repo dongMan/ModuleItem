@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		501C02A9AB301EBF19C69851 /* Pods_TestA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 843043F707C5632C7832D23B /* Pods_TestA.framework */; };
 		D539FB21242A018800FA770B /* TestAManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D539FB20242A018800FA770B /* TestAManager.swift */; };
+		D597215C24640EA70077E565 /* TestAOCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D597215B24640EA70077E565 /* TestAOCViewController.m */; };
+		D5F7DEF22462850300116FFC /* NSObject+TestABundle.m in Sources */ = {isa = PBXBuildFile; fileRef = D5F7DEF12462850300116FFC /* NSObject+TestABundle.m */; };
 		F535022D2414D2EA0019DB86 /* TestOC1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F53502252414D2EA0019DB86 /* TestOC1ViewController.m */; };
 		F535022E2414D2EA0019DB86 /* Target_OCTestA.m in Sources */ = {isa = PBXBuildFile; fileRef = F53502262414D2EA0019DB86 /* Target_OCTestA.m */; };
 		F535022F2414D2EA0019DB86 /* TestOC2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F53502272414D2EA0019DB86 /* TestOC2ViewController.m */; };
@@ -48,6 +50,10 @@
 		6C018BA289A51E3A4DFF136F /* Pods-TestA.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestA.release.xcconfig"; path = "Target Support Files/Pods-TestA/Pods-TestA.release.xcconfig"; sourceTree = "<group>"; };
 		843043F707C5632C7832D23B /* Pods_TestA.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestA.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D539FB20242A018800FA770B /* TestAManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestAManager.swift; sourceTree = "<group>"; };
+		D597215A24640EA70077E565 /* TestAOCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestAOCViewController.h; sourceTree = "<group>"; };
+		D597215B24640EA70077E565 /* TestAOCViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestAOCViewController.m; sourceTree = "<group>"; };
+		D5F7DEF02462850300116FFC /* NSObject+TestABundle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+TestABundle.h"; sourceTree = "<group>"; };
+		D5F7DEF12462850300116FFC /* NSObject+TestABundle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+TestABundle.m"; sourceTree = "<group>"; };
 		F535012024149C760019DB86 /* TestA.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestA.pch; sourceTree = "<group>"; };
 		F53502232414D2EA0019DB86 /* Target_OCTestA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Target_OCTestA.h; sourceTree = "<group>"; };
 		F53502242414D2EA0019DB86 /* TestOC2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestOC2ViewController.h; sourceTree = "<group>"; };
@@ -115,9 +121,9 @@
 		D5EAB45424503C9E0044F03E /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				D539FB20242A018800FA770B /* TestAManager.swift */,
 				D5EAB45624503CDA0044F03E /* MGJ */,
 				D5EAB45524503CD30044F03E /* CT */,
-				D539FB20242A018800FA770B /* TestAManager.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -157,9 +163,20 @@
 		D5EAB46124503F490044F03E /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				D597215A24640EA70077E565 /* TestAOCViewController.h */,
+				D597215B24640EA70077E565 /* TestAOCViewController.m */,
 				F581A22B240E6B8B00D44232 /* TestAMainViewController.swift */,
 			);
 			path = Main;
+			sourceTree = "<group>";
+		};
+		D5F7DEE62462670600116FFC /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				D5F7DEF02462850300116FFC /* NSObject+TestABundle.h */,
+				D5F7DEF12462850300116FFC /* NSObject+TestABundle.m */,
+			);
+			path = Tools;
 			sourceTree = "<group>";
 		};
 		D6730B3CB7F4254FAEBF6080 /* Frameworks */ = {
@@ -173,6 +190,7 @@
 		F535010224148C8A0019DB86 /* A */ = {
 			isa = PBXGroup;
 			children = (
+				D5F7DEE62462670600116FFC /* Tools */,
 				D5EAB45424503C9E0044F03E /* Base */,
 				D5EAB45724503D010044F03E /* VC */,
 				F535012024149C760019DB86 /* TestA.pch */,
@@ -207,12 +225,12 @@
 			children = (
 				F535010224148C8A0019DB86 /* A */,
 				F581A227240E6B8B00D44232 /* TestAAppDelegate.swift */,
+				F5E638A52410DDA500EBFD66 /* TestA-Bridging-Header.h */,
 				F581A229240E6B8B00D44232 /* SceneDelegate.swift */,
 				F581A22D240E6B8B00D44232 /* Main.storyboard */,
 				F581A230240E6B8D00D44232 /* Assets.xcassets */,
 				F581A232240E6B8E00D44232 /* LaunchScreen.storyboard */,
 				F581A235240E6B8E00D44232 /* Info.plist */,
-				F5E638A52410DDA500EBFD66 /* TestA-Bridging-Header.h */,
 			);
 			path = TestA;
 			sourceTree = "<group>";
@@ -416,10 +434,12 @@
 				F5EB0CD2241F49B500D0E7A6 /* MGJ_TestA.swift in Sources */,
 				F535022F2414D2EA0019DB86 /* TestOC2ViewController.m in Sources */,
 				F581A22C240E6B8B00D44232 /* TestAMainViewController.swift in Sources */,
+				D597215C24640EA70077E565 /* TestAOCViewController.m in Sources */,
 				F53502312414D2EA0019DB86 /* Test1ViewController.swift in Sources */,
 				F53502322414D2EA0019DB86 /* Target_TestA.swift in Sources */,
 				F535022E2414D2EA0019DB86 /* Target_OCTestA.m in Sources */,
 				F581A228240E6B8B00D44232 /* TestAAppDelegate.swift in Sources */,
+				D5F7DEF22462850300116FFC /* NSObject+TestABundle.m in Sources */,
 				F581A22A240E6B8B00D44232 /* SceneDelegate.swift in Sources */,
 				D539FB21242A018800FA770B /* TestAManager.swift in Sources */,
 			);

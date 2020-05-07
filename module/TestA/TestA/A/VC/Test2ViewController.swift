@@ -21,7 +21,7 @@ import TestBasis
 
         let btn = UIButton(type: UIButton.ButtonType.custom)
         //bundle方式加载图片
-        let img = UIImage(name: "icon_play_more", module: "TestA", selfclass: self)
+        let img = UIImage(testANamed: "icon_play_more")
         btn.setBackgroundImage(img, for: .normal)
         btn.setTitle("Test2ViewController", for: .normal)
         btn.frame = CGRect(x: 100, y: 100, width: 200, height: 200)

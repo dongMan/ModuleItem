@@ -32,12 +32,12 @@ PODS:
     - Starscream (~> 3.0.2)
   - Starscream (3.0.6)
   - TestA (1.0.1):
-    - TestA/Base (= 1.0.1)
-  - TestA/Base (1.0.1):
+    - TestA/A (= 1.0.1)
+  - TestA/A (1.0.1):
     - TestBasis
   - TestB (1.0.1):
-    - TestB/Base (= 1.0.1)
-  - TestB/Base (1.0.1):
+    - TestB/B (= 1.0.1)
+  - TestB/B (1.0.1):
     - TestBasis
   - TestBasis (1.0.0):
     - MGJRouter
@@ -79,8 +79,8 @@ PODS:
   - TestBasis/TestBasis/SSL (1.0.0):
     - MGJRouter
   - TestC (1.0.1):
-    - TestC/Base (= 1.0.1)
-  - TestC/Base (1.0.1):
+    - TestC/C (= 1.0.1)
+  - TestC/C (1.0.1):
     - TestBasis
 
 DEPENDENCIES:
@@ -127,10 +127,10 @@ SPEC CHECKSUMS:
   Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
   Socket.IO-Client-Swift: b94943e2fb916fe2f95244b9ed21828634002280
   Starscream: ef3ece99d765eeccb67de105bfa143f929026cf5
-  TestA: 3820fb1ddcb8dc0b960a5513bc01020d0e97b038
-  TestB: f7931ac148dd4e59e30388c22ab43e29056aa0a8
+  TestA: c26ec85288618881d7ddeba18ff3ed78f77805a7
+  TestB: 261efe0df348ebfc9e90f4717a3f6b27c5150b8e
   TestBasis: 868841c91293e263ef6a5f5b03ac02bfbcb920e9
-  TestC: 205604a93932fbee478df0d96114ce5e33fb75e8
+  TestC: 0abab3779bcfde7b2a1871a1b958b8167220784e
 
 PODFILE CHECKSUM: 5a625b8e10dba0932d3d8598bdca838848480d39
 

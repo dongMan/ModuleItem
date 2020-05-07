@@ -9,7 +9,7 @@
 #import "Target_OCTestA.h"
 
 #import "NSObject+CTMediator_TestA_OC.h"
-
+#import "NSObject+TestABundle.h"
 
 #import <TestBasis-umbrella.h>
 #import <TestBasis-Swift.h>

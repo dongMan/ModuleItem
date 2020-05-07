@@ -28,7 +28,7 @@ s.pod_target_xcconfig = {
 }
 
 #TestA组件
- s.subspec 'Base' do |a|
+ s.subspec 'A' do |a|
  a.source_files = 'TestA/TestA/A/*.{h,m,swift}',
  'TestA/TestA/A/**/*.{h,m,swift}',
  'TestA/TestA/A/**/**/*.{h,m,swift}'
@@ -44,6 +44,10 @@ s.pod_target_xcconfig = {
    ]
  }
  
+ a.user_target_xcconfig = {
+   "GCC_PREPROCESSOR_DEFINITIONS" => "PODTESTA=1",
+   "OTHER_SWIFT_FLAGS" => "-D PODTESTA"
+ }
  
  #a.prefix_header_file = 'TestA/TestA/A/TestA.pch'
 

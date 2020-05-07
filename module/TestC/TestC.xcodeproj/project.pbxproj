@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		7E343E93B9CC0F18779747C7 /* Pods_TestC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C000AB50A8460E58F457E4C /* Pods_TestC.framework */; };
 		D539FB25242A032500FA770B /* TestCManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D539FB24242A032500FA770B /* TestCManager.swift */; };
+		D597216224640EC20077E565 /* TestCOCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D597216024640EC20077E565 /* TestCOCViewController.m */; };
+		D5F7DEF624628BEC00116FFC /* NSObject+TestCBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = D5F7DEF524628BEC00116FFC /* NSObject+TestCBundle.m */; };
 		F53500FF24148C550019DB86 /* Target_TestC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53500FD24148C550019DB86 /* Target_TestC.swift */; };
 		F535010024148C550019DB86 /* TestCDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53500FE24148C550019DB86 /* TestCDetailViewController.swift */; };
 		F581A2DC240E6BFD00D44232 /* TestCAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F581A2DB240E6BFD00D44232 /* TestCAppDelegate.swift */; };
@@ -43,6 +45,11 @@
 		52DE6530EE1C3B452BCC1B6A /* Pods-TestC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestC.debug.xcconfig"; path = "Target Support Files/Pods-TestC/Pods-TestC.debug.xcconfig"; sourceTree = "<group>"; };
 		7C000AB50A8460E58F457E4C /* Pods_TestC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D539FB24242A032500FA770B /* TestCManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCManager.swift; sourceTree = "<group>"; };
+		D597216024640EC20077E565 /* TestCOCViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestCOCViewController.m; sourceTree = "<group>"; };
+		D597216124640EC20077E565 /* TestCOCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestCOCViewController.h; sourceTree = "<group>"; };
+		D5F7DEF324628BEC00116FFC /* TestC-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TestC-Bridging-Header.h"; sourceTree = "<group>"; };
+		D5F7DEF424628BEC00116FFC /* NSObject+TestCBundle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+TestCBundle.h"; sourceTree = "<group>"; };
+		D5F7DEF524628BEC00116FFC /* NSObject+TestCBundle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+TestCBundle.m"; sourceTree = "<group>"; };
 		E2F950CA34B2E7ECD2EDC4F1 /* Pods-TestC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestC.release.xcconfig"; path = "Target Support Files/Pods-TestC/Pods-TestC.release.xcconfig"; sourceTree = "<group>"; };
 		F53500FD24148C550019DB86 /* Target_TestC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Target_TestC.swift; sourceTree = "<group>"; };
 		F53500FE24148C550019DB86 /* TestCDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestCDetailViewController.swift; sourceTree = "<group>"; };
@@ -119,6 +126,8 @@
 		D5EAB45D24503EFD0044F03E /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				D597216124640EC20077E565 /* TestCOCViewController.h */,
+				D597216024640EC20077E565 /* TestCOCViewController.m */,
 				F581A2DF240E6BFD00D44232 /* TestCMainViewController.swift */,
 			);
 			path = Main;
@@ -150,9 +159,19 @@
 			path = Base;
 			sourceTree = "<group>";
 		};
+		D5F7DEE82462671D00116FFC /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				D5F7DEF424628BEC00116FFC /* NSObject+TestCBundle.h */,
+				D5F7DEF524628BEC00116FFC /* NSObject+TestCBundle.m */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
 		F53500FB24148C290019DB86 /* C */ = {
 			isa = PBXGroup;
 			children = (
+				D5F7DEE82462671D00116FFC /* Tools */,
 				D5EAB46024503F300044F03E /* Base */,
 				D5EAB45C24503EF70044F03E /* VC */,
 			);
@@ -186,6 +205,7 @@
 			children = (
 				F53500FB24148C290019DB86 /* C */,
 				F581A2DB240E6BFD00D44232 /* TestCAppDelegate.swift */,
+				D5F7DEF324628BEC00116FFC /* TestC-Bridging-Header.h */,
 				F581A2DD240E6BFD00D44232 /* SceneDelegate.swift */,
 				F581A2E1240E6BFD00D44232 /* Main.storyboard */,
 				F581A2E4240E6BFD00D44232 /* Assets.xcassets */,
@@ -283,6 +303,7 @@
 				TargetAttributes = {
 					F581A2D7240E6BFD00D44232 = {
 						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1140;
 					};
 					F581A2ED240E6BFE00D44232 = {
 						CreatedOnToolsVersion = 11.3.1;
@@ -389,6 +410,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F535010024148C550019DB86 /* TestCDetailViewController.swift in Sources */,
+				D597216224640EC20077E565 /* TestCOCViewController.m in Sources */,
+				D5F7DEF624628BEC00116FFC /* NSObject+TestCBundle.m in Sources */,
 				D539FB25242A032500FA770B /* TestCManager.swift in Sources */,
 				F581A2E0240E6BFD00D44232 /* TestCMainViewController.swift in Sources */,
 				F5EB0CD6241F8B8B00D0E7A6 /* MGJ_TestC.swift in Sources */,
@@ -568,6 +591,7 @@
 			baseConfigurationReference = 52DE6530EE1C3B452BCC1B6A /* Pods-TestC.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XYA9VBR3KK;
 				INFOPLIST_FILE = TestC/Info.plist;
@@ -577,6 +601,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "-.TestC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TestC/TestC-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -587,6 +613,7 @@
 			baseConfigurationReference = E2F950CA34B2E7ECD2EDC4F1 /* Pods-TestC.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XYA9VBR3KK;
 				INFOPLIST_FILE = TestC/Info.plist;
@@ -596,6 +623,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "-.TestC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TestC/TestC-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

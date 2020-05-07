@@ -2,9 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:/Users/dongxuejiao/Desktop/ModuleItem/module/DXJModule.podspec">
-   </FileRef>
-   <FileRef
       location = "group:TestBasis.podspec">
    </FileRef>
    <FileRef

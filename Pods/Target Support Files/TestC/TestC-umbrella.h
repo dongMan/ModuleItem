@@ -10,6 +10,8 @@
 #endif
 #endif
 
+#import "NSObject+TestCBundle.h"
+#import "TestCOCViewController.h"
 
 FOUNDATION_EXPORT double TestCVersionNumber;
 FOUNDATION_EXPORT const unsigned char TestCVersionString[];

@@ -22,9 +22,13 @@
   "pod_target_xcconfig": {
     "GCC_PREPROCESSOR_DEFINITIONS": "$(inherited) TestC_NAME=TestC TestC_VERSION=1.0.1"
   },
+  "user_target_xcconfig": {
+    "GCC_PREPROCESSOR_DEFINITIONS": "PODTESTC=1",
+    "OTHER_SWIFT_FLAGS": "-D PODTESTC"
+  },
   "subspecs": [
     {
-      "name": "Base",
+      "name": "C",
       "source_files": [
         "TestC/TestC/C/*.{h,m,swift}",
         "TestC/TestC/C/**/*.{h,m,swift}"

@@ -15,7 +15,7 @@ PODS:
   - AFNetworking/UIKit (4.0.1):
     - AFNetworking/NSURLSession
   - Alamofire (4.8.2)
-  - CTMediator (31)
+  - CTMediator (32)
   - FFToast (1.2.0)
   - FMDB (2.7.5):
     - FMDB/standard (= 2.7.5)
@@ -96,7 +96,7 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
   Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
-  CTMediator: 24a1279bd0909608c7d6a704e660149cc64e5f87
+  CTMediator: 10f2c387be0ab2061b75b88c86f9903eedba1ce8
   FFToast: 60e0f3c9fd8fc473205015055ee39cd200404e01
   FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
   HandyJSON: d45b8415c501e3affc59ca9762c1197ff0feb646

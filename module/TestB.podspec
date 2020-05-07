@@ -25,8 +25,14 @@ s.prefix_header_contents = <<-DESC
 s.pod_target_xcconfig = {
   "GCC_PREPROCESSOR_DEFINITIONS" => "$(inherited) TestB_NAME=#{s.name} TestB_VERSION=#{s.version}"
 }
+
+s.user_target_xcconfig = {
+  "GCC_PREPROCESSOR_DEFINITIONS" => "PODTESTB=1",
+  "OTHER_SWIFT_FLAGS" => "-D PODTESTB"
+}
+
 #TestB组件
-   s.subspec 'Base' do |b|
+   s.subspec 'B' do |b|
    b.source_files = 'TestB/TestB/B/*.{h,m,swift}',
    'TestB/TestB/B/**/*.{h,m,swift}'
    

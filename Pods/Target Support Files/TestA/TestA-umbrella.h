@@ -11,6 +11,8 @@
 #endif
 
 #import "Target_OCTestA.h"
+#import "NSObject+TestABundle.h"
+#import "TestAOCViewController.h"
 #import "TestOC1ViewController.h"
 #import "TestOC2ViewController.h"
 

@@ -26,8 +26,13 @@ s.pod_target_xcconfig = {
 "GCC_PREPROCESSOR_DEFINITIONS" => "$(inherited) TestC_NAME=#{s.name} TestC_VERSION=#{s.version}"
 }
 
+s.user_target_xcconfig = {
+  "GCC_PREPROCESSOR_DEFINITIONS" => "PODTESTC=1",
+  "OTHER_SWIFT_FLAGS" => "-D PODTESTC"
+}
+
 #TestC组件
-s.subspec 'Base' do |c|
+s.subspec 'C' do |c|
 c.source_files = 'TestC/TestC/C/*.{h,m,swift}',
 'TestC/TestC/C/**/*.{h,m,swift}'
 

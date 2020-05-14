@@ -9,10 +9,10 @@
 #ifndef TestA_pch
 #define TestA_pch
 
-#import <TestBasis-umbrella.h>
-#import <TestBasis-Swift.h>
-
-#import <CTMediator/CTMediator.h>
+//#import <TestBasis-umbrella.h>
+//#import <TestBasis-Swift.h>
+//
+//#import <CTMediator/CTMediator.h>
 
 
 //#import "TestA-Swift.h"

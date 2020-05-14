@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B50037E6D4A2D6B7EABC7D2A /* Pods_DXJItem.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E449EAE662410CD12BEE8EE9 /* Pods_DXJItem.framework */; };
+		D52E0C90246D18A90042C66A /* RootNavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D52E0C8F246D18A90042C66A /* RootNavViewController.swift */; };
 		F53500C62413649F0019DB86 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53500C52413649F0019DB86 /* AppDelegate.swift */; };
 		F53500CA2413649F0019DB86 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53500C92413649F0019DB86 /* ViewController.swift */; };
 		F53500CD2413649F0019DB86 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F53500CB2413649F0019DB86 /* Main.storyboard */; };
@@ -38,6 +39,7 @@
 /* Begin PBXFileReference section */
 		3274659B49ADCDA24E026556 /* Pods-DXJItem.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DXJItem.debug.xcconfig"; path = "Target Support Files/Pods-DXJItem/Pods-DXJItem.debug.xcconfig"; sourceTree = "<group>"; };
 		36EAE5942CA11F13C56E8E0B /* Pods-DXJItem.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DXJItem.release.xcconfig"; path = "Target Support Files/Pods-DXJItem/Pods-DXJItem.release.xcconfig"; sourceTree = "<group>"; };
+		D52E0C8F246D18A90042C66A /* RootNavViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootNavViewController.swift; sourceTree = "<group>"; };
 		D5EAB440245039F50044F03E /* DXJItem copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "DXJItem copy-Info.plist"; path = "/Users/dongxuejiao/Desktop/ModuleItem/item/DXJItem copy-Info.plist"; sourceTree = "<absolute>"; };
 		D5EAB45324503A900044F03E /* DXJItem copy2-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "DXJItem copy2-Info.plist"; path = "/Users/dongxuejiao/Desktop/ModuleItem/item/DXJItem copy2-Info.plist"; sourceTree = "<absolute>"; };
 		E449EAE662410CD12BEE8EE9 /* Pods_DXJItem.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DXJItem.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -164,6 +166,7 @@
 			isa = PBXGroup;
 			children = (
 				F53501292414B59F0019DB86 /* RootTabViewController.swift */,
+				D52E0C8F246D18A90042C66A /* RootNavViewController.swift */,
 			);
 			path = Root;
 			sourceTree = "<group>";
@@ -364,6 +367,7 @@
 			files = (
 				F535012A2414B59F0019DB86 /* RootTabViewController.swift in Sources */,
 				F53500CA2413649F0019DB86 /* ViewController.swift in Sources */,
+				D52E0C90246D18A90042C66A /* RootNavViewController.swift in Sources */,
 				F53500C62413649F0019DB86 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -15,8 +15,6 @@
 
 #if PODTESTA==1
 #import <TestA/TestA-Swift.h>
-#else
-//#import "TestA-Swift.h"
 #endif
 
 @implementation NSObject (TestABundle)

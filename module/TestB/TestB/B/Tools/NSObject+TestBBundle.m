@@ -12,11 +12,9 @@
 
 #import "TestBOCViewController.h"
 
-#if PODTESTB==1
-#import <TestB/TestB-Swift.h>
-#else
-//#import "TestB-Swift.h"
-#endif
+//#if PODTESTB==1
+//#import <TestB/TestB-Swift.h>
+//#endif
 
 @implementation NSObject (TestBBundle)
 

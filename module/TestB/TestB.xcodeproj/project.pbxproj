@@ -45,6 +45,7 @@
 		352FDA0B6BC8176154E835FE /* Pods_TestB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		59617FBA77F286A09145F40D /* Pods-TestB.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestB.release.xcconfig"; path = "Target Support Files/Pods-TestB/Pods-TestB.release.xcconfig"; sourceTree = "<group>"; };
 		AD2045ECA40BD1CAF223F6C0 /* Pods-TestB.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestB.debug.xcconfig"; path = "Target Support Files/Pods-TestB/Pods-TestB.debug.xcconfig"; sourceTree = "<group>"; };
+		D52E0C8D246D08BF0042C66A /* TestB-Bridging-File.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TestB-Bridging-File.h"; sourceTree = "<group>"; };
 		D539FB22242A021D00FA770B /* TestBManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestBManager.swift; sourceTree = "<group>"; };
 		D597215D24640EB20077E565 /* TestBOCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestBOCViewController.h; sourceTree = "<group>"; };
 		D597215E24640EB20077E565 /* TestBOCViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestBOCViewController.m; sourceTree = "<group>"; };
@@ -156,6 +157,7 @@
 			children = (
 				D5F7DEED246282BB00116FFC /* NSObject+TestBBundle.h */,
 				D5F7DEEE246282BB00116FFC /* NSObject+TestBBundle.m */,
+				D52E0C8D246D08BF0042C66A /* TestB-Bridging-File.h */,
 			);
 			path = Tools;
 			sourceTree = "<group>";

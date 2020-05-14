@@ -16,7 +16,7 @@ class RootTabViewController: UITabBarController {
         super.viewDidLoad()
         
         if let vcA = MGJRouter.object(forURL: URLObjectTestA) as? UIViewController {
-            let nav = UINavigationController(rootViewController: vcA)
+            let nav = RootNavViewController(rootViewController: vcA)
             nav.tabBarItem.title = "TestA"
             self.addChild(nav)
         }
@@ -27,20 +27,20 @@ class RootTabViewController: UITabBarController {
 //        }
         
         if let vcB = MGJRouter.object(forURL: URLObjectTestB) as? UIViewController {
-            let nav = UINavigationController(rootViewController: vcB)
+            let nav = RootNavViewController(rootViewController: vcB)
             nav.tabBarItem.title = "mgj:TestB"
             self.addChild(nav)
         }
         
         if let vcC = MGJRouter.object(forURL: URLObjectTestC) as? UIViewController {
-            let nav = UINavigationController(rootViewController: vcC)
+            let nav = RootNavViewController(rootViewController: vcC)
             nav.tabBarItem.title = "mgj:TestC"
             self.addChild(nav)
         }
         /*
          #CTMediator方式初始化
         if let vc1 = CTMediator.sharedInstance().A_ShowMainA_ViewController([:]) {
-            let nav = UINavigationController(rootViewController: vc1)
+            let nav = RootNavViewController(rootViewController: vc1)
             nav.tabBarItem.title = "TestA"
             self.addChild(nav)
         }
@@ -49,13 +49,13 @@ class RootTabViewController: UITabBarController {
             self.noticeOnlyText("A_ShowMainB_ViewController:" + result)
         }
         if let vc = vc2 {
-            let nav = UINavigationController(rootViewController: vc)
+            let nav = RootNavViewController(rootViewController: vc)
             nav.tabBarItem.title = "TestB"
             self.addChild(nav)
         }
         
         if let vc3 = CTMediator.sharedInstance().A_ShowMainC_ViewController([:]) {
-            let nav = UINavigationController(rootViewController: vc3)
+            let nav = RootNavViewController(rootViewController: vc3)
             nav.tabBarItem.title = "TestC"
             self.addChild(nav)
         }

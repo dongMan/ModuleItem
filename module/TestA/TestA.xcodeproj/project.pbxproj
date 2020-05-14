@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		501C02A9AB301EBF19C69851 /* Pods_TestA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 843043F707C5632C7832D23B /* Pods_TestA.framework */; };
+		D52E0C89246CFA880042C66A /* TestAImgBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D52E0C88246CFA870042C66A /* TestAImgBundle.swift */; };
 		D539FB21242A018800FA770B /* TestAManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D539FB20242A018800FA770B /* TestAManager.swift */; };
 		D597215C24640EA70077E565 /* TestAOCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D597215B24640EA70077E565 /* TestAOCViewController.m */; };
 		D5F7DEF22462850300116FFC /* NSObject+TestABundle.m in Sources */ = {isa = PBXBuildFile; fileRef = D5F7DEF12462850300116FFC /* NSObject+TestABundle.m */; };
@@ -49,6 +50,8 @@
 		4C331D0C4A82EDDBE7748411 /* Pods-TestA.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestA.debug.xcconfig"; path = "Target Support Files/Pods-TestA/Pods-TestA.debug.xcconfig"; sourceTree = "<group>"; };
 		6C018BA289A51E3A4DFF136F /* Pods-TestA.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestA.release.xcconfig"; path = "Target Support Files/Pods-TestA/Pods-TestA.release.xcconfig"; sourceTree = "<group>"; };
 		843043F707C5632C7832D23B /* Pods_TestA.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestA.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D52E0C88246CFA870042C66A /* TestAImgBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestAImgBundle.swift; sourceTree = "<group>"; };
+		D52E0C8E246D09360042C66A /* TestA-Bridging-File.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TestA-Bridging-File.h"; sourceTree = "<group>"; };
 		D539FB20242A018800FA770B /* TestAManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestAManager.swift; sourceTree = "<group>"; };
 		D597215A24640EA70077E565 /* TestAOCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestAOCViewController.h; sourceTree = "<group>"; };
 		D597215B24640EA70077E565 /* TestAOCViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestAOCViewController.m; sourceTree = "<group>"; };
@@ -175,6 +178,8 @@
 			children = (
 				D5F7DEF02462850300116FFC /* NSObject+TestABundle.h */,
 				D5F7DEF12462850300116FFC /* NSObject+TestABundle.m */,
+				D52E0C88246CFA870042C66A /* TestAImgBundle.swift */,
+				D52E0C8E246D09360042C66A /* TestA-Bridging-File.h */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -434,6 +439,7 @@
 				F5EB0CD2241F49B500D0E7A6 /* MGJ_TestA.swift in Sources */,
 				F535022F2414D2EA0019DB86 /* TestOC2ViewController.m in Sources */,
 				F581A22C240E6B8B00D44232 /* TestAMainViewController.swift in Sources */,
+				D52E0C89246CFA880042C66A /* TestAImgBundle.swift in Sources */,
 				D597215C24640EA70077E565 /* TestAOCViewController.m in Sources */,
 				F53502312414D2EA0019DB86 /* Test1ViewController.swift in Sources */,
 				F53502322414D2EA0019DB86 /* Target_TestA.swift in Sources */,

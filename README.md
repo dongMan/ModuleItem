@@ -1,2 +1,2 @@
 # ModuleItem
-workspace 形式的组件化
+组件化1.0版本：子模块采用workspace 形式的组件化
